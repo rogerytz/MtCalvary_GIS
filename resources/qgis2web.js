@@ -20,7 +20,7 @@ var expandedAttribution = new ol.control.Attribution({
 
 var map = new ol.Map({
     controls: ol.control.defaults({attribution:false}).extend([
-    expandedAttribution,new ol.control.ScaleLine({units: "us",bar:true})
+        expandedAttribution,new ol.control.ScaleLine({units: "us", bar:true})
     ]),
     target: document.getElementById('map'),
     renderer: 'canvas',
@@ -41,7 +41,7 @@ layerSwitcher.showPanel();
 
 
     var searchLayer = new SearchLayer({
-      layer: lyr_Deceased_1,
+      layer: lyr_Graves_1,
       colName: 'Name',
       zoom: 10,
       collapsed: true,

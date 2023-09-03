@@ -16,13 +16,6 @@ th, td {
     height: 100%;
 }
 
-#map img {
-top: 64%;
-left: 2%;
-position: absolute;
-z-index: 1;
-}
-
 .ol-popup {
     display: none;
     position: absolute;
