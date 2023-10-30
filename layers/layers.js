@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-ol.proj.get("EPSG:4326").setExtent([-73.989977, 41.941659, -73.984410, 41.944978]);
+ol.proj.get("EPSG:4326").setExtent([-73.989977, 41.941746, -73.984410, 41.944891]);
 var wms_layers = [];
 
 var format_Sections_0 = new ol.format.GeoJSON();

@@ -20,14 +20,14 @@ var expandedAttribution = new ol.control.Attribution({
 
 var map = new ol.Map({
     controls: ol.control.defaults({attribution:false}).extend([
-        expandedAttribution,new ol.control.ScaleLine({units: "us", bar:true})
+        expandedAttribution,new ol.control.ScaleLine({})
     ]),
     target: document.getElementById('map'),
     renderer: 'canvas',
     overlays: [overlayPopup],
     layers: layersList,
     view: new ol.View({
-        extent: [-73.989977, 41.941659, -73.984410, 41.944978], maxZoom: 5, minZoom: 1, projection: new ol.proj.Projection({
+        extent: [-73.989977, 41.941746, -73.984410, 41.944891], maxZoom: 5, minZoom: 1, projection: new ol.proj.Projection({
             code: 'EPSG:4326',
             extent: [-73.988637, 41.942552, -73.985671, 41.944423],
             units: 'degrees'})
@@ -53,7 +53,7 @@ layerSwitcher.showPanel();
     .getElementsByTagName('button')[0].className +=
     ' fa fa-binoculars';
     
-map.getView().fit([-73.989977, 41.941659, -73.984410, 41.944978], map.getSize());
+map.getView().fit([-73.989977, 41.941746, -73.984410, 41.944891], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
