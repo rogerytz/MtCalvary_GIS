@@ -19,9 +19,9 @@ var expandedAttribution = new ol.control.Attribution({
 });
 
 var map = new ol.Map({
-    controls: ol.control.defaults({attribution:false}).extend([
-        expandedAttribution,new ol.control.ScaleLine({})
-    ]),
+controls: ol.control.defaults({attribution:false}).extend([
+expandedAttribution,new ol.control.ScaleLine({units: "us", bar:true})
+       ]),
     target: document.getElementById('map'),
     renderer: 'canvas',
     overlays: [overlayPopup],
