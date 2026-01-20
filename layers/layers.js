@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-//ol.proj.get("EPSG:4326").setExtent([-73.990470, 41.942142, -73.984345, 41.945466]);
+//ol.proj.get("EPSG:4326").setExtent([-73.990426, 41.942104, -73.984300, 41.945427]);
 var wms_layers = [];
 
 var format_Cemetery_0 = new ol.format.GeoJSON();
@@ -39,9 +39,9 @@ var layersList = [lyr_Cemetery_0,lyr_Interred_1];
 lyr_Cemetery_0.set('fieldAliases', {'fid': 'fid', 'qc_id': 'qc_id', 'id': 'id', 'section': 'section', 'block': 'block', 'boarder': 'boarder', 'label': 'label', 'auxiliary_': 'auxiliary_', 'auxiliar_1': 'auxiliar_1', 'auxiliar_2': 'auxiliar_2', });
 lyr_Interred_1.set('fieldAliases', {'Key': 'Key', 'Section': 'Section', 'MapLgnd': 'MapLgnd', 'BurialCnt': 'BurialCnt', 'NameI': 'NameI', 'Name': 'Name', 'Deceased': 'Deceased', 'Age': 'Age', 'xLong': 'xLong', 'yLat': 'yLat', 'StatusCode': 'StatusCode', });
 lyr_Cemetery_0.set('fieldImages', {'fid': 'TextEdit', 'qc_id': 'TextEdit', 'id': 'TextEdit', 'section': 'TextEdit', 'block': 'TextEdit', 'boarder': 'TextEdit', 'label': 'TextEdit', 'auxiliary_': 'TextEdit', 'auxiliar_1': 'TextEdit', 'auxiliar_2': 'TextEdit', });
-lyr_Interred_1.set('fieldImages', {'Key': 'Hidden', 'Section': 'Hidden', 'MapLgnd': 'Hidden', 'BurialCnt': 'Hidden', 'NameI': 'TextEdit', 'Name': 'TextEdit', 'Deceased': 'TextEdit', 'Age': 'Range', 'xLong': 'Hidden', 'yLat': 'Hidden', 'StatusCode': 'Hidden', });
+lyr_Interred_1.set('fieldImages', {'Key': 'Hidden', 'Section': 'Hidden', 'MapLgnd': 'Range', 'BurialCnt': 'Hidden', 'NameI': 'TextEdit', 'Name': 'TextEdit', 'Deceased': 'TextEdit', 'Age': 'Range', 'xLong': 'Hidden', 'yLat': 'Hidden', 'StatusCode': 'Hidden', });
 lyr_Cemetery_0.set('fieldLabels', {'fid': 'no label', 'qc_id': 'no label', 'id': 'no label', 'section': 'no label', 'block': 'no label', 'boarder': 'no label', 'label': 'no label', 'auxiliary_': 'no label', 'auxiliar_1': 'no label', 'auxiliar_2': 'no label', });
-lyr_Interred_1.set('fieldLabels', {'NameI': 'no label', 'Name': 'inline label - always visible', 'Deceased': 'inline label - always visible', 'Age': 'inline label - always visible', });
+lyr_Interred_1.set('fieldLabels', {'MapLgnd': 'no label', 'NameI': 'no label', 'Name': 'inline label - always visible', 'Deceased': 'inline label - always visible', 'Age': 'inline label - always visible', });
 lyr_Interred_1.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
