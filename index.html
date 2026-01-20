@@ -9,41 +9,34 @@
         <link rel="stylesheet" href="./resources/ol.css">
         <link rel="stylesheet" href="resources/fontawesome-all.min.css">
         <link rel="stylesheet" type="text/css" href="resources/horsey.min.css">
-        <link rel="stylesheet" type="text/css" href="resources/ol3-search-layer.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/ol-search-layer.min.css">
+        <link href="resources/photon-geocoder-autocomplete.min.css" rel="stylesheet">
         <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
         <link rel="stylesheet" href="./resources/qgis2web.css">
-<style>
-.search-layer {
-  top: 65px;
-  left: .5em;
-}
-.ol-touch .search-layer {
-  top: 80px;
-}
-</style>
         <style>
         html, body {
             background-color: #ffffff;
         }
-        .ol-control button {
-            background-color: #f8f8f8 !important;
-            color: #000000 !important;
-            border-radius: 0px !important;
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
         }
-        .ol-zoom, .geolocate, .gcd-gl-control .ol-control {
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
             background-color: rgba(255,255,255,.4) !important;
-            padding: 3px !important;
-        }
-        .ol-scale-line {
-            background: none !important;
-        }
-        .ol-scale-line-inner {
-            border: 2px solid #f8f8f8 !important;
-            border-top: none !important;
-            background: rgba(255, 255, 255, 0.5) !important;
-            color: black !important;
-        }
+            padding: 2px !important;
+        } 
         </style>
+
         <style>
         html, body, #map {
             width: 100%;
@@ -52,7 +45,7 @@
             margin: 0;
         }
         </style>
-        <title>Mt Calvary Search</title>
+        <title>Mt Calvary Cemetery</title>
     </head>
     <body>
         <div id="map">
@@ -64,17 +57,16 @@
         <script src="resources/qgis2web_expressions.js"></script>
 <script src="resources/proj4.js"></script>
         <script>proj4.defs('EPSG:4326','+proj=longlat +datum=WGS84 +no_defs');</script>
-        <script src="resources/polyfills.js"></script>
         <script src="./resources/functions.js"></script>
         <script src="./resources/ol.js"></script>
-        <script src="http://cdn.polyfill.io/v2/polyfill.min.js?features=Element.prototype.classList,URL"></script>
         <script src="resources/horsey.min.js"></script>
-        <script src="resources/ol3-search-layer.js"></script>
+        <script src="resources/ol-search-layer.js"></script>
         <script src="./resources/ol-layerswitcher.js"></script>
-        <script src="layers/Sections_0.js"></script><script src="layers/Graves_1.js"></script>
-        <script src="styles/Sections_0_style.js"></script><script src="styles/Graves_1_style.js"></script>
+        <script src="resources/photon-geocoder-autocomplete.min.js"></script>
+        <script src="layers/Cemetery_0.js"></script><script src="layers/Interred_1.js"></script>
+        <script src="styles/Cemetery_0_style.js"></script><script src="styles/Interred_1_style.js"></script>
         <script src="./layers/layers.js" type="text/javascript"></script> 
         <script src="./resources/Autolinker.min.js"></script>
-        <script src="./resources/qgis2web.js"></script>
+        <script src="./resources/qgis2web.js"></script>        
     </body>
 </html>
