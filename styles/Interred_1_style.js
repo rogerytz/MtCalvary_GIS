@@ -30,7 +30,7 @@ var style_Interred_1 = function(feature, resolution){
     };
     
     var labelText = ""; 
-    var value = feature.get("MapLgnd");
+    var value = feature.get("q2wHide_MapLgnd");
     var labelFont = "10.4px \'Arial\', sans-serif";
     var labelFill = "#323232";
     var bufferColor = "";
