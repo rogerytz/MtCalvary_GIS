@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-//ol.proj.get("EPSG:4326").setExtent([-73.988981, 41.942468, -73.985306, 41.944462]);
+//ol.proj.get("EPSG:4326").setExtent([-73.989672, 41.941868, -73.984772, 41.944527]);
 var wms_layers = [];
 
 var format_Cemetery_0 = new ol.format.GeoJSON();
