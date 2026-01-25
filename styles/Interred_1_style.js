@@ -39,7 +39,7 @@ var style_Interred_1 = function(feature, resolution){
     var offsetX = 0;
     var offsetY = 0;
     var placement = 'point';
-    if (feature.get("NameI") !== null && resolution < 0.0000009) {
+    if (feature.get("NameI") !== null  && resolution < 0.0000009) {
         labelText = String(feature.get("NameI"));
     }
     
