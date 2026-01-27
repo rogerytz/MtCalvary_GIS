@@ -8,7 +8,11 @@ Used Bookmark to center.  Scale 1:600
 
 Updated January 25, 2026
 
-Scale 1:1000
+&nbsp;  Scale 1:1000
+
+Updated January 26, 2026
+
+&nbsp;  Scale 1:1000, No Legend
 
 
 

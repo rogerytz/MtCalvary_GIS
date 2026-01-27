@@ -497,56 +497,7 @@ var bottomRightContainerDiv = document.getElementById('bottom-right-container')
 
 //title
 
-var Title = new ol.control.Control({
-    element: (() => {
-        var titleElement = document.createElement('div');
-        titleElement.className = 'top-right-title ol-control';
-        titleElement.innerHTML = '<h2 class="project-title">Mt Calvary Cemetery</h2>';
-        return titleElement;
-    })(),
-    target: 'top-right-container'
-});
-map.addControl(Title)
-    
 //abstract
-
-var Abstract = new ol.control.Control({
-    element: (() => {
-        var titleElement = document.createElement('div');
-        titleElement.className = 'top-right-abstract ol-control';
-        titleElement.id = 'abstract';
-
-        var linkElement = document.createElement('a');
-
-        if (15 > 240) {
-            linkElement.setAttribute("onmouseenter", "showAbstract()");
-            linkElement.setAttribute("onmouseleave", "hideAbstract()");
-            linkElement.innerHTML = 'i';
-
-            window.hideAbstract = function() {
-                linkElement.classList.add("project-abstract");
-                linkElement.classList.remove("project-abstract-uncollapsed");
-                linkElement.innerHTML = 'i';
-            }
-
-            window.showAbstract = function() {
-                linkElement.classList.remove("project-abstract");
-                linkElement.classList.add("project-abstract-uncollapsed");
-                linkElement.innerHTML = 'Cemetery Search';
-            }
-
-            hideAbstract();
-        } else {
-            linkElement.classList.add("project-abstract-uncollapsed");
-            linkElement.innerHTML = 'Cemetery Search';
-        }
-
-        titleElement.appendChild(linkElement);
-        return titleElement;
-    })(),
-    target: 'top-right-container'
-});
-map.addControl(Abstract);
 
 
 //geolocate
@@ -643,22 +594,11 @@ map.addControl(new ol.control.ScaleLine({}));
 //layerswitcher
 
 var layerSwitcher = new ol.control.LayerSwitcher({
-    activationMode: 'click',
-	startActive: true,
-	tipLabel: "Layers",
-    target: 'top-right-container',
-	collapseLabel: '»',
-	collapseTipLabel: 'Close'
-    });
+    tipLabel: "Layers",
+    target: 'top-right-container'
+});
 map.addControl(layerSwitcher);
-if (hasTouchScreen || isSmallScreen) {
-	document.addEventListener('DOMContentLoaded', function() {
-		setTimeout(function() {
-			layerSwitcher.hidePanel();
-		}, 500);
-	});	
-}
-
+    
 
 
 
