@@ -16,7 +16,11 @@ Updated January 26, 2026
 
 Updated March 12, 2026
 
-&nbsp;  Scale 1:1000, No Legend
+   Scale 1:1000, No Legend
 
-&nbsp;  Spatial bookmark “qgis2web scale 1:1000” 
+   Spatial bookmark “qgis2web scale 1:1000”
+
+Updated March 15,2026
+
+&#x09;Spatial bookmark Centered sale 1:1000
 
